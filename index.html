@@ -5,57 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Stitch &amp; Stash</title>
 
-  <!-- Icons for both iOS Safari and iOS Chrome -->
+  <!-- Custom iPhone Home Screen Icon & Standalone Web App Settings -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://smmiller4249.github.io/stitch-and-stash/icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="https://smmiller4249.github.io/stitch-and-stash/icon.png">
   <meta name="apple-mobile-web-app-title" content="Stitch & Stash">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
   <style>
-    body {
+    html, body {
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
       background-color: #FAF5EE;
-      color: #3E2F28;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      text-align: center;
-      padding: 24px;
     }
-    img {
-      width: 110px;
-      height: 110px;
-      border-radius: 24px;
-      box-shadow: 0 8px 20px rgba(62, 47, 40, 0.12);
-      margin-bottom: 18px;
-    }
-    a.btn {
-      background-color: #D96B43;
-      color: #FFFFFF;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 14px 28px;
-      border-radius: 999px;
-      margin-top: 12px;
-      display: inline-block;
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <img src="icon.png" alt="Stitch & Stash">
-  <h1 style="margin: 0 0 6px; font-size: 24px;">Stitch &amp; Stash</h1>
-  <p style="margin: 0 0 16px; color: #7A685E; font-size: 14px;">Opening your pattern stash...</p>
-  <a class="btn" href="https://script.google.com/a/macros/g.gcpsk12.org/s/AKfycbzFR7VZ8foPgUF9zTPUjsm-JkTR9ftOmmd2W2EiSeRywIuJ2eBalKv1hs63NggorntOyQ/exec">Open Stitch &amp; Stash</a>
-
-  <script>
-    // Only auto-forward when launched from your Home Screen icon
-    if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
-      window.location.replace("https://script.google.com/a/macros/g.gcpsk12.org/s/AKfycbzFR7VZ8foPgUF9zTPUjsm-JkTR9ftOmmd2W2EiSeRywIuJ2eBalKv1hs63NggorntOyQ/exec");
-    }
-  </script>
+  <iframe 
+    src="https://script.google.com/a/macros/g.gcpsk12.org/s/AKfycbzFR7VZ8foPgUF9zTPUjsm-JkTR9ftOmmd2W2EiSeRywIuJ2eBalKv1hs63NggorntOyQ/exec"
+    allow="camera; microphone; fullscreen">
+  </iframe>
 </body>
 </html>
